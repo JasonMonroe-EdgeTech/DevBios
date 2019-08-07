@@ -1,0 +1,9 @@
+
+<div *ngFor="let dev of devs">
+  <p>
+    <a [routerLink]="['/bio',dev.id]">
+      <span class="bold"> {{dev.firstName | uppercase }}</span>
+    </a>
+  </p>
+</div>
+
